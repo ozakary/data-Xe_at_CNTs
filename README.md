@@ -23,10 +23,10 @@ The dataset comprises the following sections:
 
 If you use this data, please cite the following: \
 \
-**Paper:** Zakary, O.; Jacklin, T.; Lantto P. Local E(3)-Equivariant Neural Networks Force Field for Large-Scale Simulations of Xenon Dynamics in Single-Walled Carbon Nanotubes. *In preparation* **2025**. [DOI: TBA]
+**Paper:** Zakary, O.; Jacklin, T.; Lantto P. Neural Networks-Based Framework for Simulating Xenon Transport and <sup>129</sup>Xe NMR in Single-Walled Carbon Nanotubes. *In preparation* **2025**. [DOI: TBA]
 
 \
-**Dataset:** Zakary, O.; Jacklin, T.; Lantto P. (**2025**). Supporting Data for “*Local E(3)-Equivariant Neural Networks Force Field for Large-Scale Simulations of Xenon Dynamics in Single-Walled Carbon Nanotubes*”. *Zenodo. Dataset.* [DOI: TBA]
+**Dataset:** Zakary, O.; Jacklin, T.; Lantto P. (**2025**). Supporting Data for “*Neural Networks-Based Framework for Simulating Xenon Transport and <sup>129</sup>Xe NMR in Single-Walled Carbon Nanotubes*”. *Zenodo. Dataset.* [DOI: TBA]
 
 ---
 
