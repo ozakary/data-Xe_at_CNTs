@@ -1,4 +1,4 @@
-# Supporting Data for “*Local E(3)-Equivariant Neural Networks Force Field for Large-Scale Simulations of Xenon Dynamics in Single-Walled Carbon Nanotubes*”
+# Supporting Data for “*Neural Networks-Based Framework for Simulating Xenon Transport and <sup>129</sup>Xe NMR in Single-Walled Carbon Nanotubes*”
 
 ## Graphical Abstract
 
@@ -10,7 +10,7 @@
 **Website:** [Ouail Zakary - webpage](https://cc.oulu.fi/~nmrwww/members/Ouail_Zakary.html)  
 **Personal Website:** [Ouail Zakary - personal webpage](https://ozakary.github.io/)
 
-This is the Supporting Dataset for the manuscript “*Local E(3)-Equivariant Neural Networks Force Field for Large-Scale Simulations of Xenon Dynamics in Single-Walled Carbon Nanotubes*”. [DOI: TBA]
+This is the Supporting Dataset for the manuscript “*Neural Networks-Based Framework for Simulating Xenon Transport and <sup>129</sup>Xe NMR in Single-Walled Carbon Nanotubes*”. [DOI: TBA]
 
 The dataset comprises the following sections:
 
