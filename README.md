@@ -4,11 +4,19 @@
 
 ![Graphical Abstract](./blank.png)
 
-**Author:** Ouail Zakary  
-**ORCID:** [0000-0002-7793-3306](https://orcid.org/0000-0002-7793-3306)  
-**E-mail:** [Ouail.Zakary@oulu.fi](mailto:Ouail.Zakary@oulu.fi)  
-**Website:** [Ouail Zakary - webpage](https://cc.oulu.fi/~nmrwww/members/Ouail_Zakary.html)  
-**Personal Website:** [Ouail Zakary - personal webpage](https://ozakary.github.io/)
+---
+
+📄 Author: **Ouail Zakary**
+
+---
+
+👤 Corresponding Author: **Ouail Zakary**  
+- 📧 Email: [Ouail.Zakary@oulu.fi](mailto:Ouail.Zakary@oulu.fi)  
+- 🔗 ORCID: [0000-0002-7793-3306](https://orcid.org/0000-0002-7793-3306)  
+- 🌐 Website: [Personal Webpage](https://cc.oulu.fi/~nmrwww/members/Ouail_Zakary.html)  
+- 📁 Portfolio: [GitHub Portfolio](https://ozakary.github.io/)
+
+---
 
 This is the Supporting Dataset for the manuscript “*Neural Networks-Based Framework for Simulating Xenon Transport and <sup>129</sup>Xe NMR in Single-Walled Carbon Nanotubes*”. [DOI: TBA]
 
