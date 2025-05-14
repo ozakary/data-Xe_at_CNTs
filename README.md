@@ -14,10 +14,12 @@ This is the Supporting Dataset for the manuscript “*Neural Networks-Based Fram
 
 The dataset comprises the following sections:
 
-1. Generating the dataset used to train the MLIP model using Neural Networks architecture. ([directory](./dataset_MLIP/))
-2. Procedure for processing and preparing the dataset subsequent training.  ([directory](./dataset_MLIP/))
-3. MLIP model training, validation, and testing configuration code. ([directory](./NMR-ML_model/))
-4. Python scripts and raw numerical data for all figures included in the main manuscript and the Supporting Information. ([directory](./figures/))
+1. First principle calculations for generating the dataset. ([directory](./dft_calculations/))
+2. Procedure for processing and preparing the dataset for subsequent Allegro training.  ([directory](./dataset_MLIP/))
+3. Allegro model training, validation, and testing configuration code. ([directory](./allegro_config/))
+4. Procedure for processing and preparing the dataset for subsequent SchNet training.  ([directory](./dataset_schnet/))
+5. SchNet model training, validation, and testing configuration code. ([directory](./schnet_config/))
+6. Python scripts and raw numerical data for all figures included in the main manuscript and the Supporting Information. ([directory](./figures/))
 
 ## Citations
 
