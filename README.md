@@ -31,8 +31,9 @@ The dataset comprises the following sections:
 7. Transferability tests for the trained NMR-ML model. ([directory](./nmr-ml_transferability/))
 8. Python scripts for creating the initial Xe@SWCNTs models (i.e., SWCNTs with different radii and lengths). ([directory](./xe-at-swcnts_construction/))
 9. LAMMPS MLMD simulation procedure and input scripts. ([directory](./mlmd_procedure/))
-10. Procedure for <sup>129</sup>Xe σ<sub>iso</sub> prediction using the trained NMR-ML model. ([directory](./nmr-ml_predict_procedure/))
-11. Python scripts and raw numerical data for all figures included in the main manuscript and the Supporting Information. ([directory](./figures/))
+10. Procedure for computing the MSD and diffusion coefficients. ([directory](./msd_and_diff-coeff_procedure/))
+11. Procedure for <sup>129</sup>Xe σ<sub>iso</sub> prediction using the trained NMR-ML model. ([directory](./nmr-ml_predict_procedure/))
+12. Python scripts and raw numerical data for all figures included in the main manuscript and the Supporting Information. ([directory](./figures/))
 
 ## Citations
 
