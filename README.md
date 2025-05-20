@@ -22,12 +22,16 @@ This is the Supporting Dataset for the manuscript “*Neural Networks-Based Fram
 
 The dataset comprises the following sections:
 
-1. First principle calculations for generating the dataset. ([directory](./dft_calculations/))
-2. Procedure for processing and preparing the dataset for subsequent Allegro training.  ([directory](./dataset_MLIP/))
-3. Allegro model training, validation, and testing configuration code. ([directory](./allegro_config/))
-4. Procedure for processing and preparing the dataset for subsequent SchNet training.  ([directory](./dataset_schnet/))
-5. SchNet model training, validation, and testing configuration code. ([directory](./schnet_config/))
-6. Python scripts and raw numerical data for all figures included in the main manuscript and the Supporting Information. ([directory](./figures/))
+1. First principle calculations for generating the transferability dataset. ([directory](./dft_calculations/))
+2. Procedure for processing and preparing the dataset for training Allegro.  ([directory](./mlip_dataset/))
+3. Allegro model training, validation, and testing configuration scripts. ([directory](./configs_mlip/))
+4. Transferability tests for the trained MLIP model. ([directory](./mlip_transferability/))
+5. Procedure for processing and preparing the dataset for training SchNet.  ([directory](./nmr-ml_dataset/))
+6. SchNet model training, validation, and testing configuration code. ([directory](./nmr-ml_config/))
+7. Transferability tests for the trained NMR-ML model. ([directory](./nmr-ml_transferability/))
+8. LAMMPS MLMD simulation procedure and input scripts. ([directory](./mlmd_procedure/))
+9. Procedure for <sup>129</sup>Xe σ<sub>iso</sub> prediction using the trained NMR-ML model. ([directory](./nmr-ml_predict_procedure/))
+10. Python scripts and raw numerical data for all figures included in the main manuscript and the Supporting Information. ([directory](./figures/))
 
 ## Citations
 
