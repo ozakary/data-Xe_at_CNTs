@@ -29,9 +29,10 @@ The dataset comprises the following sections:
 5. Procedure for processing and preparing the dataset for training SchNet.  ([directory](./nmr-ml_dataset/))
 6. SchNet model training, validation, and testing configuration code. ([directory](./nmr-ml_config/))
 7. Transferability tests for the trained NMR-ML model. ([directory](./nmr-ml_transferability/))
-8. LAMMPS MLMD simulation procedure and input scripts. ([directory](./mlmd_procedure/))
-9. Procedure for <sup>129</sup>Xe σ<sub>iso</sub> prediction using the trained NMR-ML model. ([directory](./nmr-ml_predict_procedure/))
-10. Python scripts and raw numerical data for all figures included in the main manuscript and the Supporting Information. ([directory](./figures/))
+8. Python scripts for creating the initial Xe@SWCNTs models (i.e., SWCNTs with different radii and lengths). ([directory](./xe-at-swcnts_construction/))
+9. LAMMPS MLMD simulation procedure and input scripts. ([directory](./mlmd_procedure/))
+10. Procedure for <sup>129</sup>Xe σ<sub>iso</sub> prediction using the trained NMR-ML model. ([directory](./nmr-ml_predict_procedure/))
+11. Python scripts and raw numerical data for all figures included in the main manuscript and the Supporting Information. ([directory](./figures/))
 
 ## Citations
 
