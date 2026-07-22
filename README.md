@@ -1,4 +1,4 @@
-# Supporting Data for “*Xenon Transport and NMR Response in Carbon Nanotubes from Equivariant Neural Networks*”
+# Supporting Code for “*Xenon Transport and NMR Response in Carbon Nanotubes from Equivariant Neural Networks*”
 
 ## Graphical Abstract
 
@@ -18,7 +18,7 @@
 
 ---
 
-This is the Supporting Dataset for the manuscript “*Neural Networks-Based Framework for Simulating Xenon Transport and <sup>129</sup>Xe NMR in Single-Walled Carbon Nanotubes*”. [DOI: TBA]
+This is the Supporting Code for the manuscript “*Xenon Transport and NMR Response in Carbon Nanotubes from Equivariant Neural Networks*”. [DOI: TBA]
 
 The dataset comprises the following sections:
 
@@ -39,10 +39,10 @@ The dataset comprises the following sections:
 
 If you use this data, please cite the following: \
 \
-**Paper:** Zakary, O.; Jacklin, T.; Lantto P. Neural Networks-Based Framework for Simulating Xenon Transport and <sup>129</sup>Xe NMR in Single-Walled Carbon Nanotubes. *In preparation* **2025**. [DOI: TBA]
+**Paper:** Zakary, O.; Jacklin, T.; Lantto P. Xenon Transport and NMR Response in Carbon Nanotubes from Equivariant Neural Networks. *In preparation* **2025**. [DOI: TBA]
 
 \
-**Dataset:** Zakary, O.; Jacklin, T.; Lantto P. (**2025**). Supporting Data for “*Neural Networks-Based Framework for Simulating Xenon Transport and <sup>129</sup>Xe NMR in Single-Walled Carbon Nanotubes*”. *Zenodo. Dataset.* [DOI: TBA]
+**Dataset:** Zakary, O.; Jacklin, T.; Lantto P. (**2025**). Supporting Data for “*Xenon Transport and NMR Response in Carbon Nanotubes from Equivariant Neural Networks*”. *Zenodo. Dataset.* [DOI: TBA]
 
 ---
 
