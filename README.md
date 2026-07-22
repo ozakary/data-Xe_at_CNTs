@@ -36,14 +36,49 @@ The dataset comprises the following sections:
 12. Python scripts and raw numerical data for all figures included in the main manuscript and the Supporting Information. ([directory](./figures/))
 
 ## Citations
+If you use the code in this repository, please cite the following:
 
-If you use this data, please cite the following: \
-\
-**Paper:** Zakary, O.; Jacklin, T.; Lantto P. Xenon Transport and NMR Response in Carbon Nanotubes from Equivariant Neural Networks. *In preparation* **2025**. [DOI: TBA]
+### Paper  
 
-\
-**Dataset:** Zakary, O.; Jacklin, T.; Lantto P. (**2025**). Supporting Data for “*Xenon Transport and NMR Response in Carbon Nanotubes from Equivariant Neural Networks*”. *Zenodo. Dataset.* [DOI: TBA]
+```bibtex
+@article{zakary_xe-at-cnts_2026,
+  title={Xenon Transport and NMR Response in Carbon Nanotubes from Equivariant Neural Networks},
+  author={Zakary, Ouail and Jacklin, Tiia and Lantto, Perttu},
+  journal={ChemRxiv},
+  volume={},
+  pages={}, 
+  year={2026},
+  publisher={TBA},
+  doi={TBA},
+  url={TBA}
+}
+```
+
+### Dataset  
+
+```bibtex
+@dataset{zakary_xe-at-cnts_2026,
+  author = {Zakary, Ouail and Jacklin, Tiia and Lantto, Perttu},
+  title = {Supporting Data for "Xenon Transport and NMR Response in Carbon Nanotubes from Equivariant Neural Networks"},
+  year = {2026},
+  publisher = {Zenodo},
+  doi = {TBA},
+  url = {TBA}
+}
+```
+
+### Code  
+```bibtex
+@misc{zakary_xe-at-cnts_2026,
+  author = {Zakary, Ouail and Jacklin, Tiia and Lantto, Perttu},
+  title = {Supporting Code for "Xenon Transport and NMR Response in Carbon Nanotubes from Equivariant Neural Networks"},
+  year = {2026},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/ozakary/data-Xe_at_CNTs}},
+  url = {https://github.com/ozakary/data-Xe_at_CNTs}
+}
+```
 
 ---
-
 For further details, please refer to the respective folders or contact the author via the provided email.
