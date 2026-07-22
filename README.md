@@ -1,4 +1,4 @@
-# Supporting Data for “*Neural Networks-Based Framework for Simulating Xenon Transport and <sup>129</sup>Xe NMR in Single-Walled Carbon Nanotubes*”
+# Supporting Data for “*Xenon Transport and NMR Response in Carbon Nanotubes from Equivariant Neural Networks*”
 
 ## Graphical Abstract
 
