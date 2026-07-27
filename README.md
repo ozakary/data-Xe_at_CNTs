@@ -1,4 +1,4 @@
-# Supporting Code for “*Xenon Transport and NMR Response in Carbon Nanotubes from Equivariant Neural Networks*”
+# Supporting Code for “*Bridging Xenon Dynamics and NMR in Carbon Nanotubes with Equivariant Neural Networks*”
 
 ## Graphical Abstract
 
@@ -18,7 +18,7 @@
 
 ---
 
-This is the Supporting Code for the manuscript “*Xenon Transport and NMR Response in Carbon Nanotubes from Equivariant Neural Networks*”. [DOI: TBA]
+This is the Supporting Code for the manuscript “*Bridging Xenon Dynamics and NMR in Carbon Nanotubes with Equivariant Neural Networks*”. [DOI: TBA]
 
 The dataset comprises the following sections:
 
@@ -42,7 +42,7 @@ If you use the code in this repository, please cite the following:
 
 ```bibtex
 @article{zakary_xe-at-cnts_2026,
-  title={Xenon Transport and NMR Response in Carbon Nanotubes from Equivariant Neural Networks},
+  title={Bridging Xenon Dynamics and NMR in Carbon Nanotubes with Equivariant Neural Networks},
   author={Zakary, Ouail and Jacklin, Tiia and Lantto, Perttu},
   journal={ChemRxiv},
   volume={},
@@ -59,7 +59,7 @@ If you use the code in this repository, please cite the following:
 ```bibtex
 @dataset{zakary_xe-at-cnts_2026,
   author = {Zakary, Ouail and Jacklin, Tiia and Lantto, Perttu},
-  title = {Supporting Data for "Xenon Transport and NMR Response in Carbon Nanotubes from Equivariant Neural Networks"},
+  title = {Supporting Data for "Bridging Xenon Dynamics and NMR in Carbon Nanotubes with Equivariant Neural Networks"},
   year = {2026},
   publisher = {Zenodo},
   doi = {TBA},
@@ -71,7 +71,7 @@ If you use the code in this repository, please cite the following:
 ```bibtex
 @misc{zakary_xe-at-cnts_2026,
   author = {Zakary, Ouail and Jacklin, Tiia and Lantto, Perttu},
-  title = {Supporting Code for "Xenon Transport and NMR Response in Carbon Nanotubes from Equivariant Neural Networks"},
+  title = {Supporting Code for "Bridging Xenon Dynamics and NMR in Carbon Nanotubes with Equivariant Neural Networks"},
   year = {2026},
   publisher = {GitHub},
   journal = {GitHub repository},
