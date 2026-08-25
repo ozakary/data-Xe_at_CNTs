@@ -2,7 +2,7 @@
 
 ## Graphical Abstract
 
-![Graphical Abstract](./blank.png)
+![Graphical Abstract](./graphical_abstract.png)
 
 ---
 
