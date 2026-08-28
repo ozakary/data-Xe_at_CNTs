@@ -18,7 +18,7 @@ This is the Supporting Code for the manuscript “*Carbon Nanotube-Induced Magne
 
 The dataset comprises the following sections:
 
-1. Code for generating CNTs. ([directory](./gen_cnts/))
+1. Code for generating SWCNTs. ([directory](./gen_swcnts/))
 2. Single-point and <sup>129</sup>Xe NMR parameter calculations using VASP. ([directory](./dft_and_nmr_calculations_vasp/))
 3. Procedure for processing and preparing the dataset for fine-tuning MACE-OMAT-0 using MACE.  ([directory](./ft-afm_dataset/))
 4. Input files for fine-tuning MACE-OMAT-0 using MACE.  ([directory](./ft-afm_mace/))
