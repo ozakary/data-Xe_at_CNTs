@@ -6,7 +6,7 @@
 - 🌐 Website: [cc.oulu.fi/~nmrwww/members/Ouail_Zakary.html](https://cc.oulu.fi/~nmrwww/members/Ouail_Zakary.html)  
 - 📁 Personal Website: [ozakary.github.io](https://ozakary.github.io/)
 ---
-This directory contains the SLURM batch job ([`script_mace_fm_fine-tuning.job`](./script_mace_fm_fine-tuning.job)) used to fine-tune the MACE-OMAT-0-medium foundation model on the (7,6) Xe@SWCNT dataset prepared in the previous step. The job script also serves as the MACE training configuration, since `mace_run_train` takes all of its settings as command-line arguments. The training, validation, and test dataset files can be found in the [Zenodo Repository](../README.md#dataset) associated with this work. The atomistic foundation model `mace-omat-0-medium.model` is available in the [mace-foundations](https://github.com/ACEsuit/mace-foundations) repository.
+This directory contains the SLURM batch job ([`script_mace_fm_fine-tuning.job`](./script_mace_fm_fine-tuning.job)) used to fine-tune the MACE-OMAT-0-medium foundation model on the (7,6) Xe@SWCNT dataset prepared in the previous step. The job script also serves as the MACE training configuration, since `mace_run_train` takes all of its settings as command-line arguments. The training, validation, and test dataset files can be found in the [Zenodo repository](../README.md#dataset) associated with this work. The atomistic foundation model `mace-omat-0-medium.model` is available in the [mace-foundations](https://github.com/ACEsuit/mace-foundations) repository.
 ## Fine-Tuning Configuration (`mace_run_train`)
 **Model and task**  
 - `--name="fine-tuned_mace-omat-0-medium"`, run name used to tag output files
