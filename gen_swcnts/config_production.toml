@@ -48,12 +48,6 @@ n_density_points      = 6      # number of evenly spaced points in density sweep
 #   (22,0) u=23 L=97.98A: low=13  high=53
 #   (26,0) u=23 L=97.98A: low=13  high=53
 #   (30,0) u=23 L=97.98A: low=13  high=53
-#   (7,6)  u=2  L=96.02A: low=4   high=18
-#   (9,8)  u=2  L=125.5A: low=6   high=23
-#   (11,10)u=1  L=77.50A: low=7   high=27
-#   (13,12)u=1  L=92.26A: low=13  high=50
-#   (15,14)u=1  L=107.0A: low=14  high=58
-#   (17,16)u=1  L=121.8A: low=17  high=67
 # =============================================================================
 
 
@@ -131,85 +125,9 @@ m = 0
 num_units = 23
 xe_density_mode = "high"
 
-
-# ── (n,m) chiral family ───────────────────────────────────────────────────────
-
-[[tubes]]
-n = 7
-m = 6
-num_units = 2
-xe_density_mode = "low"
-
-[[tubes]]
-n = 7
-m = 6
-num_units = 2
-xe_density_mode = "high"
-
-[[tubes]]
-n = 9
-m = 8
-num_units = 2
-xe_density_mode = "low"
-
-[[tubes]]
-n = 9
-m = 8
-num_units = 2
-xe_density_mode = "high"
-
-[[tubes]]
-n = 11
-m = 10
-num_units = 1
-xe_density_mode = "low"
-
-[[tubes]]
-n = 11
-m = 10
-num_units = 1
-xe_density_mode = "high"
-
-[[tubes]]
-n = 13
-m = 12
-num_units = 1
-xe_density_mode = "low"
-
-[[tubes]]
-n = 13
-m = 12
-num_units = 1
-xe_density_mode = "high"
-
-[[tubes]]
-n = 15
-m = 14
-num_units = 1
-xe_density_mode = "low"
-
-[[tubes]]
-n = 15
-m = 14
-num_units = 1
-xe_density_mode = "high"
-
-[[tubes]]
-n = 17
-m = 16
-num_units = 1
-xe_density_mode = "low"
-
-[[tubes]]
-n = 17
-m = 16
-num_units = 1
-xe_density_mode = "high"
-
-
 # =============================================================================
 # CASE 2: Changing temperature (100-400 K, 50 K steps)
-# Uses the same structures as Case 1 for (22,0) and (13,12).
+# Uses the same structures as Case 1 for (22,0).
 # No new XYZ files needed — temperature is set in the LAMMPS input.
 # =============================================================================
 
@@ -224,8 +142,6 @@ xe_density_mode = "high"
 # Resulting sweep points:
 #   (10,0) u=23: [4,  7, 10, 12, 15, 18]
 #   (30,0) u=23: [13, 21, 29, 37, 45, 53]
-#   (7,6)  u=2:  [4,  7, 10, 12, 15, 18]
-#   (17,16)u=1:  [17, 27, 37, 47, 57, 67]
 # =============================================================================
 
 [[density_sweep]]
@@ -237,13 +153,3 @@ num_units = 23
 n = 30
 m = 0
 num_units = 23
-
-[[density_sweep]]
-n = 7
-m = 6
-num_units = 2
-
-[[density_sweep]]
-n = 17
-m = 16
-num_units = 1
