@@ -1,0 +1,10 @@
+# Run it like this:
+python nmr_dataset_builder.py --base_dir . --pattern "OUT_*" --output ./dataset --prefix "frame_"
+
+# Which gives molecule names like frame_OUT_0, frame_OUT_1, etc. If you want just OUT_0:
+
+python nmr_dataset_builder.py --base_dir . --pattern "OUT_*" --output ./dataset --prefix ""
+
+# Command used:
+
+python3 schnet_nmr-dataset_builder.py --base_dir ./ --pattern "OUT_*" --output ./schnet_nmr-dataset --prefix "cnt_10_0_u3_Xe1_frame_"
