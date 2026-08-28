@@ -1,0 +1,105 @@
+# =============================================================================
+# config_transferability_10-0_and_17-0.toml — CNT + Xe transferability-test set
+# =============================================================================
+# Part of the (8,8), (14,0), (10,0), (17,0) transferability-test group.
+# This file covers (10,0) and (17,0), both zigzag semiconducting tubes.
+# See config_transferability_8-8_and_14-0.toml for the other two tubes.
+#
+# (20,0) and (23,0), originally scanned together with (10,0)/(17,0) for the
+# k-point convergence study below, were not carried forward into the
+# transferability-test set and are omitted here.
+#
+# Usage:
+#   python generate_cnt_xe.py config_transferability_10-0_and_17-0.toml
+# =============================================================================
+
+
+# -----------------------------------------------------------------------------
+# Global physics and placement settings
+# -----------------------------------------------------------------------------
+[settings]
+
+min_xe_c = 3.86
+min_xe_xe = 4.32
+max_attempts = 500000
+narrow_radius_threshold = 5.0
+
+# box_xy = 2 * radius + vacuum_padding
+# Target Xe-wall periodic image gap: 15-20 A. Default 17 A gives:
+#   (10,0) d=7.83  -> box=24.8 A  gap=17.0 A
+#   (17,0) d=13.34 -> box=30.3 A  gap=17.0 A
+vacuum_padding = 17.0
+
+output_format = "extxyz"
+
+
+# -----------------------------------------------------------------------------
+# Reference CNT (used only for density fallback if n_xe is omitted per tube)
+# -----------------------------------------------------------------------------
+[reference]
+n        = 7
+m        = 6
+num_units = 1
+n_xe     = 6
+
+
+# =============================================================================
+# Tube list
+# =============================================================================
+# Both tubes are zigzag semiconducting (n,0) with R = (n % 3) != 0.
+# k-point grid at KSPACING = 0.08 A^-1:
+#   (10,0) x3  L=12.78 A  -> 3x3x6  = 54 k-pts  (matches k-point test)
+#   (17,0) x2  L=8.52  A  -> 3x3x9  = 81 k-pts
+# =============================================================================
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# (10,0)  zigzag semi (3k+1,0)  d=7.83 A  R=1
+# 3 unit cells: 120 C atoms, L=12.78 A
+# Single-file confinement — effective pore r=2.21 A ~ sigma_Xe
+# k-grid: 3x3x6 = 54 (validated by k-point convergence test)
+# Cost proxy: ~6600 (n_atoms x k_tot)
+# ─────────────────────────────────────────────────────────────────────────────
+[[tubes]]
+n = 10
+m = 0
+num_units = 3
+n_xe = 1
+
+[[tubes]]
+n = 10
+m = 0
+num_units = 3
+n_xe = 2
+
+[[tubes]]
+n = 10
+m = 0
+num_units = 3
+n_xe = 3
+
+
+# ─────────────────────────────────────────────────────────────────────────────
+# (17,0)  zigzag semi (3k+2,0)  d=13.34 A  R=2
+# 2 unit cells: 136 C atoms, L=8.52 A
+# Onset of multi-Xe confinement -- 2 Xe can fit side by side.
+# k-grid: 3x3x9 = 81
+# Cost proxy: ~11200 (most expensive system)
+# ─────────────────────────────────────────────────────────────────────────────
+[[tubes]]
+n = 17
+m = 0
+num_units = 2
+n_xe = 1
+
+[[tubes]]
+n = 17
+m = 0
+num_units = 2
+n_xe = 2
+
+[[tubes]]
+n = 17
+m = 0
+num_units = 2
+n_xe = 3
