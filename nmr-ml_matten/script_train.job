@@ -3,7 +3,7 @@
 #--------------------------------------------------------------------------------------------------------------------------------
 #SBATCH --job-name=test
 #SBATCH --partition=gpu
-#SBATCH --account=plantto # !!it is mandatory to specify the account (project) as precised in the CSC rules!!
+#SBATCH --account=<project> # !!it is mandatory to specify the account (project) as precised in the CSC rules!!
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=20
 #SBATCH --mem-per-cpu=8GB
@@ -17,7 +17,7 @@
 
 module load python-data/3.10
 
-source /scratch/plantto/zakaryou/packages/matten_installation/matten_env/bin/activate 
+source /path/to/matten_env/bin/activate 
 
 # Set unlimited stack size
 ulimit -s unlimited
