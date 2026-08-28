@@ -1,0 +1,28 @@
+#!/bin/bash -l
+
+#--------------------------------------------------------------------------------------------------------------------------------
+#SBATCH --partition=standard-g
+#SBATCH --nodes=1
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=7
+#SBATCH --gpus-per-node=1
+#SBATCH --time=24:00:00
+#SBATCH --account=project_462001159
+#SBATCH --output=nmr-ml_matten-output_%j.txt
+#SBATCH --error=nmr-ml_matten-errors_%j.txt
+#SBATCH --get-user-env
+#SBATCH --exclusive
+#SBATCH --hint=nomultithread
+#--------------------------------------------------------------------------------------------------------------------------------
+#================================< Instructions-Section for Training Full Magnetic Shielding Tensor using SchNet Model >============================================
+#-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+module load cray-python/3.10.10
+source /scratch/project_462001159/zakaryou/packages/matten_installation/matten_env_rocm2/bin/activate
+
+python3 -c "import torch; print('GPU available:', torch.cuda.is_available()); print('GPU name:', torch.cuda.get_device_name(0) if torch.cuda.is_available() else 'N/A')"
+
+python3 predict_atomic_tensor.py cnt_traj_out_chunk_01.xyz output_prediction_chunk_01.csv \
+  --save_every 1 \
+  --model_path "/scratch/project_462001159/zakaryou/NMR-ML/MatTen/SWCNTs/nmr-ml_model/both_cnts_r-cut_10/matten_logs/matten_proj_xe_swcnts_10_0_and_17_0/4491y9lt/checkpoints/" \
+  --checkpoint "last.ckpt"
