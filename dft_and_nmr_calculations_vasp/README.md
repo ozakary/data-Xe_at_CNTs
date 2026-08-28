@@ -1,4 +1,4 @@
-# Single-Point and <sub>129</sub>Xe NMR Parameter Calculations Using VASP
+# Single-Point and <sup>129</sup>Xe NMR Parameter Calculations Using VASP
 ---
 📄 Author: **Ouail Zakary** 
 - 📧 Email: [Ouail.Zakary@oulu.fi](mailto:Ouail.Zakary@oulu.fi)  
