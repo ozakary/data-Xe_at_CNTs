@@ -18,18 +18,16 @@ This is the Supporting Code for the manuscript “*Carbon Nanotube-Induced Magne
 
 The dataset comprises the following sections:
 
-1. First principle calculations for generating the transferability dataset. ([directory](./dft_calculations/))
-2. Procedure for processing and preparing the dataset for training Allegro.  ([directory](./mlip_dataset/))
-3. Allegro model training, validation, and testing configuration scripts. ([directory](./configs_mlip/))
-4. Transferability tests for the trained MLIP model. ([directory](./mlip_transferability/))
-5. Procedure for processing and preparing the dataset for training SchNet.  ([directory](./nmr-ml_dataset/))
-6. SchNet model training, validation, and testing configuration code. ([directory](./nmr-ml_config/))
-7. Transferability tests for the trained NMR-ML model. ([directory](./nmr-ml_transferability/))
-8. Python scripts for creating the initial Xe@SWCNTs models (i.e., SWCNTs with different radii and lengths). ([directory](./xe-at-swcnts_construction/))
-9. LAMMPS MLMD simulation procedure and input scripts. ([directory](./mlmd_procedure/))
-10. Procedure for computing the MSD and diffusion coefficients. ([directory](./msd_and_diff-coeff_procedure/))
-11. Procedure for <sup>129</sup>Xe σ<sub>iso</sub> prediction using the trained NMR-ML model. ([directory](./nmr-ml_predict_procedure/))
-12. Python scripts and raw numerical data for all figures included in the main manuscript and the Supporting Information. ([directory](./figures/))
+1. Code for generating CNTs. ([directory](./gen_cnts/))
+2. Single-point and <sup>129</sup>Xe NMR parameter calculations using VASP. ([directory](./dft_and_nmr_calculations_vasp/))
+3. Procedure for processing and preparing the dataset for fine-tuning MACE-OMAT-0 using MACE.  ([directory](./ft-afm_dataset/))
+4. Input files for fine-tuning MACE-OMAT-0 using MACE.  ([directory](./ft-afm_mace/))
+5. Code for performing UMAP analysis.   ([directory](./umap_analysis/))
+6. Procedure for processing and preparing the dataset for training MatTen.  ([directory](./nmr-ml_dataset/))
+7. Input files for training MatTen.  ([directory](./nmr-ml_matten/))
+8. LAMMPS MLMD simulation procedure and input scripts. ([directory](./mlmd_procedure_lammps/))
+9. Procedure for <sup>129</sup>Xe σ<sub>iso</sub> prediction using the trained NMR-ML model. ([directory](./nmr-ml_predict_procedure/))
+10. Python scripts and raw numerical data for all figures included in the main manuscript and the Supporting Information. ([directory](./figures/))
 
 ## Citations
 If you use the code in this repository, please cite the following:
