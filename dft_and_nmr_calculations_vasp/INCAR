@@ -1,0 +1,27 @@
+SYSTEM=Xe_SWCNTs
+
+# Electronic structure settings
+ISTART=2                   # Continue from previous WAVECAR
+ISMEAR=0                   # Gaussian smearing
+SIGMA=0.01                 # Small smearing width
+ENCUT=850                 # Plane-wave cutoff (can be reduced if needed)
+PREC=Normal                # More efficient
+LREAL=A                    # Projection operators in real space
+EDIFF=1e-6                 # Electronic convergence criterion
+NELM=100                   # Maximum number of electronic SC steps
+
+# Output control
+LWAVE=FALSE                # Don't write WAVECAR
+LCHARG=FALSE               # Don't write CHGCAR
+
+# DFT method
+IVDW=12                    # PBE-D3(BJ) dispersion correction
+
+ISYM=0                     # No symmetry
+
+# NMR parameters calculation settings
+LCHIMAG=.TRUE.
+DQ = 0.003
+ICHIBARE = 1
+LEFG=.TRUE.
+QUAD_EFG = 33.27 -393
