@@ -14,7 +14,7 @@
 
 ---
 
-This is the Supporting Code for the manuscript “*Carbon Nanotube-Induced Magnetic Shielding Effects on <sup>129</sup>Xe NMR from Equivariant Neural Networks*”. [DOI: TBA]
+This is the Supporting Code for the manuscript “*Carbon Nanotube-Induced Magnetic Shielding Effects on <sup>129</sup>Xe NMR from Equivariant Neural Networks*”. [![DOI](https://img.shields.io/badge/DOI-10.26434%2Fchemrxiv.15007956/v1-violet.svg)](https://doi.org/10.26434/chemrxiv.15007956/v1)
 
 The dataset comprises the following sections:
 
@@ -34,7 +34,7 @@ The dataset comprises the following sections:
 ## Citations
 If you use the code in this repository, please cite the following:
 
-### Paper  
+### Preprint [![DOI](https://img.shields.io/badge/DOI-10.26434%2Fchemrxiv.15007956/v1-violet.svg)](https://doi.org/10.26434/chemrxiv.15007956/v1)
 
 ```bibtex
 @article{zakary_xe-at-cnts_paper_2026,
@@ -44,9 +44,9 @@ If you use the code in this repository, please cite the following:
   volume={},
   pages={}, 
   year={2026},
-  publisher={TBA},
-  doi={TBA},
-  url={TBA}
+  publisher={},
+  doi={10.26434/chemrxiv.15007956/v1},
+  url={https://doi.org/10.26434/chemrxiv.15007956/v1}
 }
 ```
 
