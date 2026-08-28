@@ -1,0 +1,1 @@
+for i in $(seq 1 1 250); do python3 nmr_vasp.py --poscar ./OUT_${i}/POSCAR --outcar ./OUT_${i}/OUTCAR --report ./OUT_${i}/nmr_report.txt --organized_report ./OUT_${i}/nmr_organized_report.md --csv OUT_${i}/nmr_data.csv; done
