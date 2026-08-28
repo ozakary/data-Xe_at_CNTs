@@ -1,0 +1,14 @@
+Method 1: Using a Configuration File (Recommended)
+
+Create a config file (config.txt), per example:
+structures_with_sigma_iso_1.csv,magnetic_shielding_tensors_1.csv,23.86466077 0.0 0.0 0.0 23.86466077 0.0 0.0 0.0 23.86466077
+structures_with_sigma_iso_2.csv,magnetic_shielding_tensors_2.csv,25.76466077 0.0 0.0 0.0 25.76466077 0.0 0.0 0.0 25.76466077
+
+Then run:
+python3 enhanced_csv_to_json_converter.py config.txt
+
+Method 2: Direct Command Line
+
+python enhanced_csv_to_json_converter.py \
+  structures_with_sigma_iso_1.csv magnetic_shielding_tensors_1.csv "23.86466077 0.0 0.0 0.0 23.86466077 0.0 0.0 0.0 23.86466077" \
+  structures_with_sigma_iso_2.csv magnetic_shielding_tensors_2.csv "25.76466077 0.0 0.0 0.0 25.76466077 0.0 0.0 0.0 25.76466077"
