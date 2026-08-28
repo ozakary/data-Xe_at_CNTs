@@ -1,0 +1,249 @@
+# =============================================================================
+# config_production.toml — CNT + Xe initial configuration generator
+# =============================================================================
+# Usage:
+#   python generate_cnt_xe.py config_production.toml
+#
+# Xe loading per [[tubes]] block — three options (in priority order):
+#   n_xe = <int>                   explicit atom count
+#   xe_density_mode = "low"/"high" fraction of geometric maximum
+#   xe_linear_density = <float>    explicit atoms/Å
+#
+# [[density_sweep]] blocks generate one XYZ per density point for one tube.
+# =============================================================================
+
+
+# -----------------------------------------------------------------------------
+# Global placement settings
+# -----------------------------------------------------------------------------
+[settings]
+min_xe_c               = 3.86     # minimum Xe-C distance (A)
+min_xe_xe              = 4.32     # minimum Xe-Xe distance (A)
+max_attempts           = 500000   # rejection sampling budget (higher for large systems)
+narrow_radius_threshold = 5.0     # tubes below this radius use single-file placement
+vacuum_padding         = 17.0     # gap between C wall and periodic image in x,y (A)
+output_format          = "extxyz"
+
+
+# -----------------------------------------------------------------------------
+# Xe density settings
+# Both low and high loading are defined as fractions of the geometric maximum.
+# geometric_max = floor(L / sigma_Xe) x n_xy   where n_xy = 1, 2, or 3
+# depending on the pore radius.
+# -----------------------------------------------------------------------------
+[xe_density]
+low_loading_fraction  = 0.20   # low  loading: 20% of geometric max
+high_loading_fraction = 0.80   # high loading: 80% of geometric max
+n_density_points      = 6      # number of evenly spaced points in density sweep
+
+
+# =============================================================================
+# CASE 1: Fixed density, changing size (300 K)
+# Target tube length: ~100 A
+# =============================================================================
+# Resulting Xe counts (20% / 80% of geometric max):
+#   (10,0) u=23 L=97.98A: low=4   high=18
+#   (14,0) u=23 L=97.98A: low=4   high=18
+#   (18,0) u=23 L=97.98A: low=9   high=35
+#   (22,0) u=23 L=97.98A: low=13  high=53
+#   (26,0) u=23 L=97.98A: low=13  high=53
+#   (30,0) u=23 L=97.98A: low=13  high=53
+#   (7,6)  u=2  L=96.02A: low=4   high=18
+#   (9,8)  u=2  L=125.5A: low=6   high=23
+#   (11,10)u=1  L=77.50A: low=7   high=27
+#   (13,12)u=1  L=92.26A: low=13  high=50
+#   (15,14)u=1  L=107.0A: low=14  high=58
+#   (17,16)u=1  L=121.8A: low=17  high=67
+# =============================================================================
+
+
+# ── (n,0) zigzag family ───────────────────────────────────────────────────────
+
+[[tubes]]
+n = 10
+m = 0
+num_units = 23
+xe_density_mode = "low"
+
+[[tubes]]
+n = 10
+m = 0
+num_units = 23
+xe_density_mode = "high"
+
+[[tubes]]
+n = 14
+m = 0
+num_units = 23
+xe_density_mode = "low"
+
+[[tubes]]
+n = 14
+m = 0
+num_units = 23
+xe_density_mode = "high"
+
+[[tubes]]
+n = 18
+m = 0
+num_units = 23
+xe_density_mode = "low"
+
+[[tubes]]
+n = 18
+m = 0
+num_units = 23
+xe_density_mode = "high"
+
+[[tubes]]
+n = 22
+m = 0
+num_units = 23
+xe_density_mode = "low"
+
+[[tubes]]
+n = 22
+m = 0
+num_units = 23
+xe_density_mode = "high"
+
+[[tubes]]
+n = 26
+m = 0
+num_units = 23
+xe_density_mode = "low"
+
+[[tubes]]
+n = 26
+m = 0
+num_units = 23
+xe_density_mode = "high"
+
+[[tubes]]
+n = 30
+m = 0
+num_units = 23
+xe_density_mode = "low"
+
+[[tubes]]
+n = 30
+m = 0
+num_units = 23
+xe_density_mode = "high"
+
+
+# ── (n,m) chiral family ───────────────────────────────────────────────────────
+
+[[tubes]]
+n = 7
+m = 6
+num_units = 2
+xe_density_mode = "low"
+
+[[tubes]]
+n = 7
+m = 6
+num_units = 2
+xe_density_mode = "high"
+
+[[tubes]]
+n = 9
+m = 8
+num_units = 2
+xe_density_mode = "low"
+
+[[tubes]]
+n = 9
+m = 8
+num_units = 2
+xe_density_mode = "high"
+
+[[tubes]]
+n = 11
+m = 10
+num_units = 1
+xe_density_mode = "low"
+
+[[tubes]]
+n = 11
+m = 10
+num_units = 1
+xe_density_mode = "high"
+
+[[tubes]]
+n = 13
+m = 12
+num_units = 1
+xe_density_mode = "low"
+
+[[tubes]]
+n = 13
+m = 12
+num_units = 1
+xe_density_mode = "high"
+
+[[tubes]]
+n = 15
+m = 14
+num_units = 1
+xe_density_mode = "low"
+
+[[tubes]]
+n = 15
+m = 14
+num_units = 1
+xe_density_mode = "high"
+
+[[tubes]]
+n = 17
+m = 16
+num_units = 1
+xe_density_mode = "low"
+
+[[tubes]]
+n = 17
+m = 16
+num_units = 1
+xe_density_mode = "high"
+
+
+# =============================================================================
+# CASE 2: Changing temperature (100-400 K, 50 K steps)
+# Uses the same structures as Case 1 for (22,0) and (13,12).
+# No new XYZ files needed — temperature is set in the LAMMPS input.
+# =============================================================================
+
+
+# =============================================================================
+# CASE 3: Changing density (300 K, 6 evenly spaced density points)
+# The 4 tubes below. Low and high endpoints are shared with Case 1
+# (those files already generated above), so only the 4 intermediate
+# points per tube are strictly new. All 6 are generated here for
+# completeness — duplicates are safe (files are simply overwritten).
+#
+# Resulting sweep points:
+#   (10,0) u=23: [4,  7, 10, 12, 15, 18]
+#   (30,0) u=23: [13, 21, 29, 37, 45, 53]
+#   (7,6)  u=2:  [4,  7, 10, 12, 15, 18]
+#   (17,16)u=1:  [17, 27, 37, 47, 57, 67]
+# =============================================================================
+
+[[density_sweep]]
+n = 10
+m = 0
+num_units = 23
+
+[[density_sweep]]
+n = 30
+m = 0
+num_units = 23
+
+[[density_sweep]]
+n = 7
+m = 6
+num_units = 2
+
+[[density_sweep]]
+n = 17
+m = 16
+num_units = 1
