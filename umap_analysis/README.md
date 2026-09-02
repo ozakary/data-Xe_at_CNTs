@@ -14,7 +14,7 @@ This directory contains the script used to visualize the structural diversity of
 | `14_0_cnt/xe_cnt_14-0_all.xyz` | Fixed, all frames labeled `4Xe@(14,0)` |
 | `10_0_cnt/cnt_10_0_u3_Xe1-2-3_all_frames.xyz` | Mixed, labeled `1Xe@(10,0)`, `2Xe@(10,0)`, or `3Xe@(10,0)` by Xe count |
 | `17_0_cnt/cnt_17_0_u2_Xe1-2-3_all_frames.xyz` | Mixed, labeled `1Xe@(17,0)`, `2Xe@(17,0)`, or `3Xe@(17,0)` by Xe count |
-These trajectory files are part of the same [Zenodo repository](./).
+These trajectory files can be found at the [Zenodo repository](./).
 ## SOAP Descriptor Settings
 Generated with DScribe, one vector per Xe atom, centered on its local environment.
 | Setting | Value |
@@ -43,6 +43,8 @@ The standardized SOAP feature matrix (zero mean, unit variance per feature, via 
 ## Requirements
 - Python packages, `ase`, `dscribe`, `umap-learn`, `scikit-learn`, `numpy`, `matplotlib`, `seaborn`, `tqdm`
   ```bash
+  python -m venv umap_env
+  source ./umap_env/bin/activate
   pip install ase dscribe umap-learn scikit-learn numpy matplotlib seaborn tqdm
   ```
 ## Usage
