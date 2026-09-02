@@ -15,7 +15,7 @@ For each sampled MLMD snapshot, `nmr_vasp.py` reads the frame's `POSCAR` and `OU
 ```bash
 for i in $(seq 1 1 250); do python3 nmr_vasp.py --poscar ./OUT_${i}/POSCAR --outcar ./OUT_${i}/OUTCAR --report ./OUT_${i}/nmr_report.txt --organized_report ./OUT_${i}/nmr_organized_report.md --csv OUT_${i}/nmr_data.csv; done
 ```
-The frame count (250 above) and the `OUT_*` directory naming vary by system. Each run produces a `nmr_report.txt` per frame, the input expected by the consolidation step below. An optional `--sanity_check` flag compares the computed σ<sub>iso</sub>, span, and skew against VASP's own CSA tensor block for validation.
+The frame count (250 above) and the `OUT_*` directory naming vary by system. Each run produces a `nmr_report.txt` per frame, the input expected by the merging step below. An optional `--sanity_check` flag compares the computed σ<sub>iso</sub>, span, and skew against VASP's own CSA tensor block for validation.
 ### Stage 2, Per-System Dataset Merging ([`schnet_nmr-dataset_builder.py`](./schnet_nmr-dataset_builder.py))
 Reads every `POSCAR` and `nmr_report.txt` pair from the `OUT_*` frame directories of one system and merge them into four CSV files, `structures.csv`, `magnetic_shielding_tensors.csv`, `nmr_parameters.csv`, and `train.csv`.
 ```bash
@@ -47,7 +47,7 @@ Each line lists one system's structure CSV, tensor CSV, and flattened 3x3 lattic
 ../structures_with_sigma_iso_cnt_17_0_u2_Xe1.csv,../../magnetic_shielding_tensors_cnt_17_0_u2_Xe1.csv,30.3090795355 0.0000000000 0.0000000000 0.0000000000 30.3090795355 0.0000000000 0.0000000000 0.0000000000 8.5200000000
 ```
 The lattice values match the CNT simulation box dimensions from the structure-generation step.
-#### Execution
+#### Running the code
 ```bash
 python csv_to_json_converter_enhanced.py config.txt
 ```
