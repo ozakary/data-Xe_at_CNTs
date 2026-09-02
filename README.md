@@ -27,7 +27,6 @@ The dataset comprises the following sections:
 7. Input files for training MatTen.  ([directory](./nmr-ml_matten/))
 8. LAMMPS MLMD simulation procedure and input scripts. ([directory](./mlmd_procedure_lammps/))
 9. Procedure for <sup>129</sup>Xe σ<sub>iso</sub> prediction using the trained NMR-ML model. ([directory](./nmr-ml_predict_procedure/))
-10. Python scripts and raw numerical data for all figures included in the main manuscript and the Supporting Information. ([directory](./figures/))
 
 ## Citations
 If you use the code in this repository, please cite the following:
