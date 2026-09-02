@@ -6,9 +6,10 @@
 - 🌐 Website: [cc.oulu.fi/~nmrwww/members/Ouail_Zakary.html](https://cc.oulu.fi/~nmrwww/members/Ouail_Zakary.html)  
 - 📁 Personal Website: [ozakary.github.io](https://ozakary.github.io/)
 ---
-This directory contains the Python script and TOML configuration files used to generate the initial CNT + Xe atomic configurations analyzed in the manuscript. Structures were built for both **armchair** and **zigzag** single-walled carbon nanotubes (SWCNTs) across a range of chiralities, tube lengths, and Xe loadings, covering the **transferability-test set** — (8,8), (14,0), (10,0), and (17,0) — and the **production-simulation set** used for the size, temperature, and density studies.
+This directory contains the Python script and TOML configuration files used to generate the initial CNT + Xe atomic configurations used in the manuscript. Structures were built for both **armchair** and **zigzag** single-walled carbon nanotubes (SWCNTs) across a range of chiralities, tube lengths, and Xe loadings, covering the **transferability-test set** ((8,8), (14,0), (10,0), and (17,0)) and the **production-simulation set** used for the size, temperature, and density studies.
+
 ## Xe Loading Strategies
-Each `[[tubes]]` block in a config file sets the Xe loading in one of three ways, checked in priority order.
+Each `[[tubes]]` block in a config file sets the Xe loading in one of three ways:
 - **Explicit count**: `n_xe = <int>`, used throughout the transferability-test configs
 - **Density mode**: `xe_density_mode = "low"` or `"high"`, a fraction (default 20% / 80%) of the geometric maximum Xe capacity of the tube, used in the production config
 - **Linear density**: `xe_linear_density = <float>`, an explicit Xe atoms per angstrom along the tube axis
