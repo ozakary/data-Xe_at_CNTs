@@ -47,7 +47,7 @@ If you use the code in this repository, please cite the following:
 }
 ```
 
-### Dataset  
+### Dataset [![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.22347673-green.svg)](https://doi.org/10.5281/zenodo.22347673)
 
 ```bibtex
 @dataset{zakary_xe-at-cnts_data_2026,
@@ -55,8 +55,8 @@ If you use the code in this repository, please cite the following:
   title = {Supporting Data for "Carbon Nanotube-Induced Magnetic Shielding Effects on <sup>129</sup>Xe NMR from Equivariant Neural Networks"},
   year = {2026},
   publisher = {Zenodo},
-  doi = {TBA},
-  url = {TBA}
+  doi = {10.5281/zenodo.22347673},
+  url = {https://doi.org/10.5281/zenodo.22347673}
 }
 ```
 
