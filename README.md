@@ -31,7 +31,7 @@ The dataset comprises the following sections:
 ## Citations
 If you use the code in this repository, please cite the following:
 
-### Preprint [![DOI](https://img.shields.io/badge/DOI-10.26434%2Fchemrxiv.15007956/v1-violet.svg)](https://doi.org/10.26434/chemrxiv.15007956/v1)
+### Preprint [![DOI](https://img.shields.io/badge/DOI-10.26434%2Fchemrxiv.15007956/v2-violet.svg)](https://doi.org/10.26434/chemrxiv.15007956/v2)
 
 ```bibtex
 @article{zakary_xe-at-cnts_paper_2026,
