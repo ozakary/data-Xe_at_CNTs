@@ -14,7 +14,7 @@
 
 ---
 
-This is the Supporting Code for the manuscript “*Carbon Nanotube-Induced Magnetic Shielding Effects on <sup>129</sup>Xe NMR from Equivariant Neural Networks*”. [![DOI](https://img.shields.io/badge/DOI-10.26434%2Fchemrxiv.15007956/v2-violet.svg)](https://doi.org/10.26434/chemrxiv.15007956/v2)
+This is the Supporting Code for the manuscript “*Carbon Nanotube-Induced Magnetic Shielding Effects on <sup>129</sup>Xe NMR from Equivariant Neural Networks*”. [![DOI](https://img.shields.io/badge/DOI-10.1039%2FD6CP03538H-yellow.svg)](https://doi.org/10.1039/D6CP03538H)
 
 The dataset comprises the following sections:
 
@@ -31,19 +31,19 @@ The dataset comprises the following sections:
 ## Citations
 If you use the code in this repository, please cite the following:
 
-### Preprint [![DOI](https://img.shields.io/badge/DOI-10.26434%2Fchemrxiv.15007956/v2-violet.svg)](https://doi.org/10.26434/chemrxiv.15007956/v2)
+### Paper [![DOI](https://img.shields.io/badge/DOI-10.1039%2FD6CP03538H-yellow.svg)](https://doi.org/10.1039/D6CP03538H)
 
 ```bibtex
 @article{zakary_xe-at-cnts_paper_2026,
   title={Carbon Nanotube-Induced Magnetic Shielding Effects on <sup>129</sup>Xe NMR from Equivariant Neural Networks},
   author={Zakary, Ouail and Jacklin, Tiia and Lantto, Perttu},
-  journal={ChemRxiv},
+  journal={Phys. Chem. Chem. Phys.},
   volume={},
   pages={}, 
   year={2026},
-  publisher={},
-  doi={10.26434/chemrxiv.15007956/v2},
-  url={https://doi.org/10.26434/chemrxiv.15007956/v2}
+  publisher={The Royal Society of Chemistry},
+  doi={10.1039/D6CP03538H},
+  url={https://doi.org/10.1039/D6CP03538H}
 }
 ```
 
